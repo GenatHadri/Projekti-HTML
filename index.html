@@ -11,7 +11,6 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animated.css"> 
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -29,15 +28,15 @@
                     <img src="resources/img/logo-white.png" style="border-radius: 50px" alt="Take and Eat logo" class="logo">   
                     <img src="resources/img/logo.png" alt="Take and Eat logo" class="logo-black">   
                     <ul class="main-nav js--main-nav">
-                        <li><a href="#features">Porosia</a></li>
-                        <li><a href="#works">Si punon</a></li>
-                        <li><a href="#cities">Qytetet</a></li>
-                        <li><a href="#plans">Regjistrimi</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">About us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#login">Log in</a></li>
                     </ul>
                         <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
-            <div class="hero-text-box">
+            <div class="hero-text-box" id="home">
                 <h1>Welcome in our Fast Food</h1>
                 <a class="btn btn-full js--scroll-to-meals" href="#">Jam i uritur</a>
                 <a class="btn btn-ghost js--scroll-to-start" href="#">Me shume</a>
@@ -48,7 +47,8 @@
         
         </header>
         
-        
+               
+
         
         <section class="section-features js--section-features" id="features">
             <div class="row">
@@ -85,6 +85,74 @@
                 </div>          
             </div>
         </section>
+        
+         <section class="section-register" id="login">
+            <div class="row">
+                <h2>Log in dhe Register</h2>
+            </div>
+            <div class="container">
+                <div class="link-container">
+                    <a id="firstA" href="#" onclick="changeForm(0)">Login</a>
+                    <a href="#" onclick="changeForm(1)">Register</a>
+                </div>
+                  <form id="mainForm" action="">
+                    <div class="login forms form-style">
+                      <label for="">Username:</label>
+                      <input type="text" class="input" placeholder="username..." />
+                      <label for="">Password:</label>
+                      <input type="password" class="input" placeholder="password..." />
+                      <input
+                        id="submit"
+                        type="submit"
+                        class="input submit"
+                        value="Login"
+                        onclick="validate(0)"
+                      />
+                    </div>
+                <div class="register forms hidden">
+                  <label for="">Name:</label>
+                  <input type="text" class="input" placeholder="username..." />
+                  <label for="">Lastname:</label>
+                  <input type="text" class="input" placeholder="lastname..." />
+                  <label for="">Password:</label>
+                  <input type="password" class="input" placeholder="password..." />
+                  <input
+                    id="submit"
+                    type="submit"
+                    class="input submit"
+                    value="Login"
+                    onclick="validate(1)"
+                  />
+                </div>
+                </form>
+             </div>
+            
+            <script>
+            function changeForm(form) {
+                let forms = document.querySelectorAll("form>div");
+                if (form == 0) {
+                    forms[0].classList.remove("hidden");
+                    forms[0].classList.add("form-style");
+                    forms[1].classList.add("hidden");
+                    forms[1].classList.remove("form-style");
+                } else {
+                    forms[1].classList.remove("hidden");
+                    forms[1].classList.add("form-style");
+                    forms[0].classList.add("hidden");
+                    forms[0].classList.remove("form-style");
+                }
+            }
+
+            function validate(form) {
+                let inputs = document.querySelectorAll("input");
+                if (form == 0 && inputs[0].value == "" || inputs[1].value == "") {
+                    alert("nuk keni mbushur te dhenat");
+                } else if (form == 1 && inputs[3].value == "" || inputs[4].value == "" || inputs[5].value == "") {
+                    alert("nuk mund te regjistroheni nese nuk keni mbushur te dhenat");
+                }
+            }</script>
+        </section>
+        
         
     
         
@@ -276,8 +344,9 @@
         </section>
         
 
-       
-        <section class="section-form">
+ 
+
+        <section class="section-form" id="contact">
             <div class="row">
                 <h2>Jemi te lumtur nese e plotesoni kete pyetesor</h2>
             </div>
@@ -340,7 +409,7 @@
                 </form>
             </div>
         </section>
-        
+
             <footer>
             <div class="row">
                 <div class="col span-1-of-2">

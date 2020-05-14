@@ -19,32 +19,10 @@
         margin-left: 10%;
     }
     
-    
-/*
-    .steps-box { margin-top: 10px; }
-    .steps-box:last-child { margin-top: 10px; }
-    .works-steps { margin-bottom: 40px; }
-    .works-step:last-of-type { margin-bottom: 60px; }
-    
-    .app-screen { width: 50%; }
-    
-    .icon-small { 
-        width: 17px;
-        margin-right: 5px;
-    }
-*/
+
     
     .city-feature { font-size: 90%; }
     
-/*
-    .plan-box {
-        width: 100%;
-        margin-left: 0%;
-    }
-    
-    .plan-price { font-size: 250%; }
-    .contact-form { width: 80%; }
-*/
 
 }
 
@@ -64,7 +42,7 @@
     
     
     .main-nav { display: none; }
-    .mobile-nav-icon {display: inline-block;}
+    
     
     .main-nav {
         float: left;
@@ -101,23 +79,7 @@
         margin-left: 0%;
     }
     
-/*
-    .app-screen { width: 40%; }
-    .steps-box:first-child { text-align: center; }
-*/
-    
-/*
-    .works-step div {
-        height: 40px;
-        width: 40px;
-        margin-right: 15px;
-        padding: 4px;
-        font-size: 120%;
-    }
-    
-    .works-step { margin-bottom: 20px; }
-    .works-step:last-of-type { margin-bottom: 20px; }
-*/
+
     
 }
 
