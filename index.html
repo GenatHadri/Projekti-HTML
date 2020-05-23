@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Take and Eat is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
         
-        
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+       
+<!--        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">-->
+<!--        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">-->
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
@@ -98,9 +98,9 @@
                   <form id="mainForm" action="">
                     <div class="login forms form-style">
                       <label for="">Username:</label>
-                      <input type="text" class="input" placeholder="username..." />
+                      <input type="text" class="input" placeholder="username..." data-validation="length" data-validation-length="3-20"/>
                       <label for="">Password:</label>
-                      <input type="password" class="input" placeholder="password..." />
+                      <input type="password" class="input" placeholder="password..." data-validation="length" data-validation-length="min8"/>
                       <input
                         id="submit"
                         type="submit"
@@ -111,11 +111,11 @@
                     </div>
                 <div class="register forms hidden">
                   <label for="">Name:</label>
-                  <input type="text" class="input" placeholder="username..." />
+                  <input type="text" class="input" placeholder="username..." data-validation="length" data-validation-length="3-20"/>
                   <label for="">Lastname:</label>
-                  <input type="text" class="input" placeholder="lastname..." />
+                  <input type="text" class="input" placeholder="lastname..." data-validation="length" data-validation-length="3-20"/>
                   <label for="">Password:</label>
-                  <input type="password" class="input" placeholder="password..." />
+                  <input type="password" class="input" placeholder="password..." data-validation="length" data-validation-length="min8"/>
                   <input
                     id="submit"
                     type="submit"
@@ -150,7 +150,16 @@
                 } else if (form == 1 && inputs[3].value == "" || inputs[4].value == "" || inputs[5].value == "") {
                     alert("nuk mund te regjistroheni nese nuk keni mbushur te dhenat");
                 }
-            }</script>
+            }
+             </script>
+             
+             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+            <script>
+              $.validate({
+                lang: '#registration'
+              });
+            </script>
         </section>
         
         
@@ -280,6 +289,7 @@
         </section>
         
              
+<!--
         <section class="section-menu">
             <div class="row">
                 <h2>Oferta e fundit</h2>
@@ -309,6 +319,7 @@
                 </div>
                 
         </section>
+-->
         
         
     <section class="section-testimonials js--section-testimonials ">
@@ -447,5 +458,3 @@
     </body>
 
 </html>
-
-
