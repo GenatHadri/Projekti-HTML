@@ -31,8 +31,7 @@
 
 @media only screen and (max-width: 480px) {
 	.col { 
-		
-        margin: 0;
+    margin: 0;
 	}
 }
 
@@ -112,6 +111,7 @@
     
     .city-feature { font-size: 90%; }
     
+    
 
 }
 
@@ -126,7 +126,6 @@
         width: 100%;
         margin: 0 0 4% 0;
     }
-    
     
     
     
@@ -179,6 +178,8 @@
 @media only screen and (max-width: 480px) {
     section { padding: 25px 0; }
     .contact-form {width: 100%; }
+    
+    
     
 }
 

@@ -115,7 +115,7 @@ h2:after {
     font-size: 120%;
     margin-right: 10px;
     
-    /*secrets to align text and icons*/
+
     line-height: 120%;
     vertical-align: middle;
     margin-top: -5px;
@@ -138,7 +138,7 @@ a:active {
     color: #555;
     border-bottom: 1px solid transparent;
 }
-
+    
 /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
@@ -299,102 +299,6 @@ header {
 }
 
 /* ----------------------------------------------- */
-/* MENU */
-/* ----------------------------------------------- */
-
-
-/*
-Green: #67b26f
-Blue: #4ca2cd
-Mid: #5aaa9d
-*/
-
-/*
-.section-menu{
-    background-color: #f4f4f4;
-}
-.pizza {
-  max-width: 100%;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 30px 80px 10px rgba(0,0,0,.2);
-  height: 295px;
-  
-  display: flex;
-  align-items: stretch;
-}
-.pizza__hero {
-  flex: 0 0 40%;
-  height: auto;    
-}
-.pizza__img {
-  width: 100%;
-  display: block;
-}
-.pizza__content {
-  flex: 1;
-  background: white;
-  padding: 35px 30px;
-  color: #3b3838;    
-  
-  display: flex;
-  flex-direction: column;
-}
-.pizza__price {
-  flex: 0 0 50px;
-  background: linear-gradient(to bottom, #67b26f, #4ca2cd);
-  writing-mode: vertical-rl;
-  color: white;
-  font-size: 18px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pizza__title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.pizza__heading {
-  font-size: 25px;
-  margin-right: auto;
-  color: #3b3838; 
-  font-family: 'Lato';
-  font-weight: 500;
-}
-.pizza__tag {
-  font-size: 10px;
-  text-transform: uppercase;
-  color: white;
-  padding: 2px 7px;
-  border-radius: 100px;
-  margin-left: 7px;
-}
-.pizza__tag--1 { background-color: #67b26f; }
-.pizza__tag--2 { background-color: #4ca2cd; }
-.pizza__description {
-  font-size: 14px;
-}
-.pizza__details {
-  display: flex;
-  margin-top: auto;
-}
-.pizza__detail {
-  font-size: 15px;
-  text-transform: uppercase;
-  margin-right: 90px;
-  font-weight: 700; 
-  display: flex;
-  align-items: center;
-}
-.emoji {
-  font-size: 20px;
-  margin-right: 3px;
-}
-*/
-
-/* ----------------------------------------------- */
 /* MEALS */
 /* ----------------------------------------------- */
 
@@ -513,7 +417,6 @@ cite img {
 
 input[type=text],
 input[type=email],
-select,
 textarea {
     width: 100%;
     padding: 7px;
@@ -525,7 +428,7 @@ textarea {
     height: 100px;
 }
 
-input[type=checkbox] {
+input[type=radio] {
     margin: 10px 5px 10px 0;
 }
 
@@ -535,6 +438,7 @@ input[type=checkbox] {
 /* ----------------------------------------------- */
 /* Log in */
 /* ----------------------------------------------- */
+/*
 
 .section-register{
      background-color: #f4f4f4;   
@@ -616,7 +520,7 @@ input[type=checkbox] {
     height: auto;
 }
 
-#submit {
+#submit,#submit1 {
     width: 26%;
     left: 37%;
     background-color: #28a745;
@@ -627,6 +531,7 @@ input[type=checkbox] {
         
 }
 
+*/
 
 
 /* ----------------------------------------------- */
